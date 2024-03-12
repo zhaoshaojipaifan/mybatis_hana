@@ -2,9 +2,6 @@ package com.example.mybatis_hana.pojo;
 
 import java.util.List;
 
-/**
- * 班级持久化类
- */
 public class IClass {
     private Integer id;
     private String classname;

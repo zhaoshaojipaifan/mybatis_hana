@@ -1,12 +1,9 @@
 package com.example.mybatis_hana.pojo;
 
-/**
- * 学生持久化类
- */
 public class IStudent {
-    private Integer id;       // 主键id
-    private String name;      // 姓名
-    private int age;           // 年龄
+    private Integer id;
+    private String name;
+    private int age;
 
     public Integer getId() {
         return id;
