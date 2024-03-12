@@ -28,4 +28,24 @@ public class MybatisHanaApplicationTests {
         System.out.println(icalss.toString());
         session.close();
     }
-}
+        //一对多查询出二班所有学生的信息
+        //将id=4的学生姓名修改为李雷，年龄修改为21
+        @Test
+        public void updateStudent() {
+            SqlSession session = MyBatisUtils.getSession();
+            IStudent student = new IStudent();
+            student.setId(4);
+            student.setName("丁真");
+            student.setAge(23);
+            IStudentMapper mapper = session.getMapper(IStudentMapper.class);
+            int update = mapper.updateStudent(student);
+            if (update > 0) {
+                System.out.println("修改了" + update + "条数据！");
+            } else {
+                System.out.println("修改失败！");
+            }
+            System.out.println(student.toString());
+            session.commit();
+            session.close();
+        }
+    }

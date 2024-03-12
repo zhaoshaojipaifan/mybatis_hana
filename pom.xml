@@ -61,6 +61,11 @@
             <artifactId>kotlin-stdlib</artifactId>
             <version>1.8.21</version>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-core</artifactId>
+            <version>3.0-beta</version>
+        </dependency>
     </dependencies>
 
     <build>
