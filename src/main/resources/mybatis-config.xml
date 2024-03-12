@@ -20,5 +20,6 @@
     </environments>
     <mappers>
         <mapper class="com.example.mybatis_hana.dao.IStudentMapper"/>
+        <mapper class="com.example.mybatis_hana.dao.IClassMapper"/>
     </mappers>
 </configuration>
