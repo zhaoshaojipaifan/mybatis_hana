@@ -20,16 +20,12 @@ public class MybatisHanaApplicationTests {
 
     @Test
     public void selectClassByIdTest() {
-        // 1.通过工具类生成SqlSession对象
         SqlSession session = MyBatisUtils.getSession();
         IClassMapper mapper = session.getMapper(IClassMapper.class);
-        // 2.查询id为2的班级中学生的信息
         IClass icalss = mapper.selectClassById(2);
         System.out.println(icalss.toString());
         session.close();
     }
-        //一对多查询出二班所有学生的信息
-        //将id=4的学生姓名修改为李雷，年龄修改为21
         @Test
         public void updateStudent() {
             SqlSession session = MyBatisUtils.getSession();

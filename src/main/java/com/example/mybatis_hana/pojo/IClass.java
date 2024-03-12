@@ -6,9 +6,9 @@ import java.util.List;
  * 班级持久化类
  */
 public class IClass {
-    private Integer id;                       // 主键id
-    private String classname;                // 班级名称
-    private List<IStudent> studentList;    // 学生集合
+    private Integer id;
+    private String classname;
+    private List<IStudent> studentList;
 
     public Integer getId() {
         return id;

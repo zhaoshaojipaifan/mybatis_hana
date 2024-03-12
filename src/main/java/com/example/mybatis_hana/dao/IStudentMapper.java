@@ -17,7 +17,6 @@ public interface IStudentMapper {
     List<IStudent> selectStudentByCid(int cid);
     @Select("select * from s_student where id = #{id}")
     IStudent selectStudentById(int id);
-    //将id=4的学生姓名修改为李雷，年龄修改为21
     @Update("update s_student set name = #{name},age = #{age} " + "where id = #{id}")
     int updateStudent(IStudent student);
 
