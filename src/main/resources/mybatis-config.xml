@@ -19,6 +19,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper class="com.itheima.dao.IStudentMapper"/>
+        <mapper class="com.example.mybatis_hana.dao.IStudentMapper"/>
     </mappers>
 </configuration>
